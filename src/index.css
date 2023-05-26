@@ -1,0 +1,141 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: "Playfair", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.heading-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.content-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.login-container {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 16px;
+}
+
+.login {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.latest-price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-price-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.latest-price-label,
+.latest-timestamp-label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.latest-price-value,
+.latest-timestamp-value {
+  font-size: 24px;
+}
+
+.reset-password-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reset-password-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .heading-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .login-container,
+  .latest-price-container {
+    padding: 0;
+  }
+
+  .login {
+    margin-bottom: 16px;
+  }
+}
